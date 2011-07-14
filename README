@@ -3,6 +3,7 @@ Experiementing with javascript widgets.
 ✓ 2 widgets (kittens, flot)
 ✓ widget dir layout e.g. app/widgets/kittens
 ✓ layout
+- data source - ticker simulator
 
 Later:
 - users/per-user widget config

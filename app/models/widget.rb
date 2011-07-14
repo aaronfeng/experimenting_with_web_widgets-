@@ -1,4 +1,12 @@
 class Widget
+  class Proxy
+    def self.call(env)
+      name = env["PATH_INFO"].match(/\/widgets\/(\w*)/)[1]
+      proxy = ::Widget.new(name).proxy_app
+      proxy.call(env)
+    end
+  end
+
   attr_accessor :name
   def initialize(name)
     @name = name
@@ -26,5 +34,10 @@ class Widget
 
   def resource(path)
     base.join(path)
+  end
+
+  def proxy_app
+    load base.join('proxy.rb').to_s
+    Widget::Proxy.const_get(name.capitalize).new
   end
 end

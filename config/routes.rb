@@ -4,7 +4,9 @@ Dashboard::Application.routes.draw do
 
   resources :widgets do
     member do
-      get '*resource' => 'widgets#static'
+      match 'proxy',       :to => Widget::Proxy
+      match 'proxy/*path', :to => Widget::Proxy
+      get   '*resource'    => 'widgets#static'
     end
   end
 
