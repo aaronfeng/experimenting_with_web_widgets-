@@ -2,6 +2,12 @@ Dashboard::Application.routes.draw do
   get "dashboard/index"
   get "cars/index"
 
+  resources :widgets do
+    member do
+      get '*resource' => 'widgets#static'
+    end
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

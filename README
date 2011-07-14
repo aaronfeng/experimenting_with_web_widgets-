@@ -1,1 +1,13 @@
 Experiementing with javascript widgets.
+
+- no auth
+- 2 widgets (kittens, flot)
+- layout - top and bottom
+√ widget dir layout e.g. app/widgets/kittens
+
+Later:
+- users/per-user widget config
+- uploading zip
+- drag and drop layout control
+- detect static file mime types
+
