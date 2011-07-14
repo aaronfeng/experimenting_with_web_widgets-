@@ -4,6 +4,10 @@ class Widget
     @name = name
   end
 
+  def id
+    SecureRandom.uuid
+  end
+
   def height
     300
   end
