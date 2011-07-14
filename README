@@ -1,8 +1,8 @@
 Experiementing with javascript widgets.
 
-- 2 widgets (kittens, flot)
-- layout - top and bottom
-√ widget dir layout e.g. app/widgets/kittens
+✓ 2 widgets (kittens, flot)
+✓ widget dir layout e.g. app/widgets/kittens
+✓ layout
 
 Later:
 - users/per-user widget config

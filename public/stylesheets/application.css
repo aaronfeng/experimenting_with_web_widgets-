@@ -1,4 +1,20 @@
-iframe {
-  border: 0;
+.widget {
+  width: 474px;
+  border: 1px solid #050;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.widget header {
+  background: #050;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.widget iframe {
+  margin: 5px;
+  width: 464px;
 }
 

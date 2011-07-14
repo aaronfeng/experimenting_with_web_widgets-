@@ -1,3 +1,10 @@
-<% @widgets.each do |widget| %>
-  <%= widget.render(self) %>
+<% @widgets.each_slice(@widgets.length / 2) do |widgets| %>
+  <div class="sg-17">
+    <% widgets.each do |widget| %>
+      <div class="widget">
+        <header><%= widget.title %></header>
+        <%= widget.render(self) %>
+      </div>
+    <% end %>
+  </div>
 <% end %>

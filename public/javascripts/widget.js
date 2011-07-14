@@ -1,8 +1,8 @@
 widget = {
   resize: function () {
     var iframe = window.frameElement;
-    iframe.width  = document.width;
     iframe.height = document.height;
+    console.log("resized " + widget.identifier);
   }
 };
 
